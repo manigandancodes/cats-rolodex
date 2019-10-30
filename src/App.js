@@ -21,8 +21,9 @@ class App extends Component {
 
   makeCats = () => {
     let cats = [];
+    let length = 50;
 
-    for (let i = 0; i <= 30; i++) {
+    for (let i = 0; i <= length; i++) {
       cats.push({ name: Cat.random(), id: i + 1 });
     }
 
@@ -45,7 +46,7 @@ class App extends Component {
         <h1>Cats Rolodex</h1>
 
         <SearchBox
-          placeholder='Search Monsters'
+          placeholder='Search Cats'
           handleChange={this.handleChange}
         />
 
